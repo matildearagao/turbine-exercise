@@ -1,5 +1,7 @@
 
-
+.body{
+  background-color: #e1ebec;
+}
 .ellipsis {
   display: inline-block;
   width: 80%;
@@ -17,10 +19,16 @@
   box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.75);
 }
 .btn-red {
-  background-color: #fe1e52;
+  background-color: #fe1e52 !important;
+  color: white !important;
 }
 .btn-green {
-  background-color: #01f58a;
+  background-color: #01f58a !important;
+  color: white !important;
+}
+.btn-blue {
+  background-color: #1c97df !important;
+  color: white !important;
 }
 .btn-fixed {
   position: fixed;

@@ -9,11 +9,10 @@ export default class UserSearch extends Component {
             <Fragment>
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 mx-auto col-md-6 my-2 text-center">
+                        <div className="col-12 mx-auto col-md-8 my-2 text-center">
                             <form className="mt-4" onSubmit={handleSearchSubmit}>
-                                <label htmlFor="search" className="text-capitalize">Type user name</label>
                                 <div className="input-group">
-                                    <input type="text" name="search" placeholder="john" className="form-control" onChange={handleSearchChange} value={value} />
+                                    <input type="text" name="search" placeholder="Type user name" className="form-control" onChange={handleSearchChange} value={value} />
                                     <div className="input-group-append">
                                         <button type="submit" className="input-group-text bg-primary text-white" >
                                             <FaSearch />

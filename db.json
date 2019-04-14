@@ -1,24 +1,31 @@
 {
   "data": [
     {
-      "id": 1,
-      "name": "Anna Montana",
-      "email": "amontana@gmail.com",
-      "phone1": "99999",
-      "phone2": "99999",
-      "shipping": "address",
-      "billing": "address",
-      "expand": false
+      "name": "xavier",
+      "email": "ana@ana.pt",
+      "phone1": "9999",
+      "phone2": "",
+      "shipping": "gdg",
+      "billing": "gfd",
+      "id": 2
     },
     {
-      "id": 2,
-      "name": "John Simth",
-      "email": "jsmith@gmail.com",
-      "phone1": "999999",
+      "name": "Bruno",
+      "email": "ana@ana.pt",
+      "phone1": "9999",
       "phone2": "",
-      "shipping": "address",
-      "billing": "address",
-      "expand": false
+      "shipping": "gdg",
+      "billing": "gfd",
+      "id": 3
+    },
+    {
+      "name": "vdfd",
+      "email": "fadf",
+      "phone1": "999",
+      "phone2": "",
+      "shipping": "df",
+      "billing": "fs",
+      "id": 4
     }
   ]
 }

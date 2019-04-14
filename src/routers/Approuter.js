@@ -1,25 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
-import PersonList from '../Components/PersonList';
-import PersonInput from '../Components/PersonInput';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import UserList from '../Components/UserList';
+import UserInput from '../Components/UserInput';
+import UserEdit from '../Components/UserEdit';
 
 
 const Approuter = () => {
   return (
     <BrowserRouter>
       <div>
-        <ul>
-          <li>
-            <Link to="/">User List</Link>
-          </li>
-          <li>
-            <Link to="/adduser">Add User</Link>
-          </li>
-       
-        </ul>
         <Switch>
-          <Route path="/" component={PersonList} exact />
-          <Route path="/adduser" component={PersonInput} />
+          <Route path="/" component={UserList} exact />
+          <Route path="/adduser" component={UserInput} />
+          <Route path="/edituser-:id" component={UserEdit} />
         </Switch>
       </div>
       
