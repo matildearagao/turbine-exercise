@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Anna Montana",
+      "email": "amontana@gmail.com",
+      "phone1": "99999",
+      "phone2": "99999",
+      "shipping": "address",
+      "billing": "address",
+      "expand": false
+    },
+    {
+      "id": 2,
+      "name": "John Simth",
+      "email": "jsmith@gmail.com",
+      "phone1": "999999",
+      "phone2": "99999",
+      "shipping": "address",
+      "billing": "address",
+      "expand": false
+    }
+  ]
+}
