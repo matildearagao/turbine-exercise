@@ -15,4 +15,4 @@ Launches the app in your browser.
 
 ## About this app
 This app was made as an exercise for Turbine.
-I used React as Framework, Bootstrap for styling, Json-server to serve as an API for the database and Axios to fetch data from the API.
+I used React as Framework, Bootstrap for styling, Json-server to serve as an API, and Axios to fetch data from the API.
