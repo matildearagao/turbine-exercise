@@ -1,10 +1,9 @@
-
-:root{
+:root {
   --main-blue-color: #1c97df;
   --main-green-color: #01f58a;
   --main-red-color: #fe1e52;
 }
-.body{
+.body {
   background-color: #e1ebec;
 }
 .ellipsis {
@@ -27,12 +26,12 @@
   background-color: var(--main-red-color);
 }
 .btn-green {
-  background-color: var(--main-green-color) ;
+  background-color: var(--main-green-color);
 }
 .btn-blue {
   background-color: var(--main-blue-color);
 }
-.btn-edit{
+.btn-edit {
   background-color: transparent;
   border: none;
   color: var(--main-blue-color);
@@ -42,25 +41,29 @@
 .btn-fixed {
   position: fixed;
   bottom: 50px;
-  right: 50px; 
+  right: 50px;
 }
 @media only screen and (max-width: 600px) {
   .btn-fixed {
     bottom: 10px;
-    right: 10px; 
+    right: 10px;
   }
 }
 
-.btn-fixed a{
+.btn-fixed a {
   color: white;
 }
-.link-white{
-  color: white ;
+.link-white {
+  color: white;
 }
-.link-white:hover{
+.link-white:hover {
   text-decoration: none;
 }
-.icon{
+.icon {
   color: var(--main-blue-color);
   margin-right: 10px;
+}
+
+.u-margin-top {
+  margin-top: 80px;
 }

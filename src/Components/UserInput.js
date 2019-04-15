@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import { FaUndoAlt, FaCheck } from "react-icons/fa";
 
-
 import axios from "axios";
 
 export default class UserInput extends Component {
@@ -16,6 +15,7 @@ export default class UserInput extends Component {
     toHome: false
   };
 
+  //post user to db through post method
   handleSubmit = e => {
     e.preventDefault();
 
@@ -36,6 +36,7 @@ export default class UserInput extends Component {
     e.target.reset();
   };
 
+  //handle changes in inputs 
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value
@@ -48,7 +49,7 @@ export default class UserInput extends Component {
     }
 
     return (
-      <div className="container mb-5">
+      <div className="container u-margin-top">
         <div className="row">
           <div className="col-sm-12 col-md-6 mx-auto">
             <h2 className="text-center my-4">Add User </h2>
@@ -98,7 +99,7 @@ export default class UserInput extends Component {
               </div>
 
               <br />
-              <hr/>
+              <hr />
               <br />
 
               <div className="form-group">
@@ -129,7 +130,7 @@ export default class UserInput extends Component {
                     <FaUndoAlt />
                   </button>
                 </Link>
-                
+
                 <button
                   type="submit"
                   onSubmit={this.handleSubmit}

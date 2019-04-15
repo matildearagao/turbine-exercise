@@ -16,7 +16,8 @@ export default class UserEdit extends Component {
     }
   };
 
-  componentWillMount = () => {
+  //get user based on user id
+  componentDidMount = () => {
     const id = this.props.match.params.id;
     axios.get(`http://localhost:3000/data/${id}`).then(res => {
       this.setState({
@@ -25,6 +26,7 @@ export default class UserEdit extends Component {
     });
   };
 
+  //send to db thourgh patch method
   handleSubmit = e => {
     e.preventDefault();
     const id = this.props.match.params.id;
@@ -47,6 +49,8 @@ export default class UserEdit extends Component {
 
     e.target.reset();
   };
+
+  //delete user
   handleDelete = e => {
     e.preventDefault();
     const id = this.props.match.params.id;
@@ -84,7 +88,7 @@ export default class UserEdit extends Component {
       return <Redirect to="/" />;
     }
     return (
-      <div className="container mb-5">
+      <div className="container u-margin-top">
         <div className="row">
           <div className="col-sm-12 col-md-6 mx-auto">
             <h2 className="text-center my-4">Edit User </h2>

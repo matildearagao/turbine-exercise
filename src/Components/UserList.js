@@ -12,8 +12,10 @@ export default class UserList extends Component {
     filtered: []
   };
 
+
   componentDidMount() {
-    //here be fetch
+    //fetch data from json server
+    //db.json is serving as a db
     axios.get("http://localhost:3000/data").then(res => {
       this.setState({
         users: res.data,
@@ -22,8 +24,7 @@ export default class UserList extends Component {
     });
   }
 
-
-
+  //search users from user name
   filterUsers = e => {
     var updatedList = this.state.users;
     updatedList = updatedList.filter(function(user) {
@@ -32,6 +33,7 @@ export default class UserList extends Component {
     this.setState({ filtered: updatedList });
   };
 
+  //render users
   renderUsers = () => {
     if (this.state.users.length > 0) {
       return this.state.filtered.map(user => {
@@ -43,6 +45,7 @@ export default class UserList extends Component {
     return <div>No users</div>;
   };
 
+  //handle user expand - one at a time
   handleExpand = id => {
     this.setState({
       users: this.state.users.map(user => {
@@ -58,8 +61,8 @@ export default class UserList extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h2 className="text-center mt-2">User List</h2>
+      <div className="container u-margin-top">
+        <h2 className="text-center mt-5">User List</h2>
         <div className="col-sm-12 col-md-8 mx-auto my-3">
           <input
             type="text"
