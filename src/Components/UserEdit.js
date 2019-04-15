@@ -22,7 +22,6 @@ export default class UserEdit extends Component {
       this.setState({
         user: res.data
       });
-      console.log(res.data);
     });
   };
 
@@ -106,7 +105,7 @@ export default class UserEdit extends Component {
               <div className="form-group">
                 <label htmlFor="email"> Person Email:</label>
                 <input
-                  type="text"
+                  type="email"
                   className="form-control"
                   name="email"
                   id="email"

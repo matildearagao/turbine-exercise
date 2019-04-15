@@ -1,31 +1,67 @@
 {
   "data": [
     {
-      "name": "xavier",
-      "email": "ana@ana.pt",
-      "phone1": "9999",
-      "phone2": "",
-      "shipping": "gdg",
-      "billing": "gfd",
+      "name": "Lillian Hill",
+      "email": "lillian.hill32@example.com",
+      "phone1": "(204)-645-1760",
+      "phone2": "(276)-555-5949",
+      "shipping": "3141 E Little York Rd",
+      "billing": "3141 E Little York Rd",
       "id": 2
     },
     {
-      "name": "Bruno",
-      "email": "ana@ana.pt",
-      "phone1": "9999",
+      "name": "Kenneth Schmidt",
+      "email": "kenneth.schmidt75@example.com",
+      "phone1": "(351)-762-2095",
       "phone2": "",
-      "shipping": "gdg",
-      "billing": "gfd",
+      "shipping": "2241 Groveland Terrace",
+      "billing": "2241 Groveland Terrace",
       "id": 3
     },
     {
-      "name": "vdfd",
-      "email": "fadf",
-      "phone1": "999",
+      "name": "Carl Harper",
+      "email": "carl.harper52@example.com",
+      "phone1": "(882)-391-5695",
       "phone2": "",
-      "shipping": "df",
-      "billing": "fs",
+      "shipping": "5573 Railroad St",
+      "billing": "5573 Railroad St",
       "id": 4
+    },
+    {
+      "name": "Alma Perkins",
+      "email": "alma.perkins95@example.com",
+      "phone1": "(882)-391-5695",
+      "phone2": "",
+      "shipping": "5300 Lovers Ln",
+      "billing": "5300 Lovers Ln",
+      "id": 5
+    },
+    {
+      "name": "Brooklyn Barnes",
+      "email": "brooklyn.barnes93@example.com",
+      "phone1": "(882)-391-5695",
+      "phone2": "",
+      "shipping": "5300 Lovers Ln",
+      "billing": "5300 Lovers Ln",
+      "id": 6
+    },
+    {
+      "name": "Mary Poppins",
+      "email": "mary@poppins.pt",
+      "phone1": "(555) 999 888",
+      "phone2": "",
+      "shipping": "Heaven Street 19 ",
+      "billing": "Heaven Street 19 ",
+      "id": 7
+    },
+    {
+      "name": "Jon Snow",
+      "email": "jon@snow.pt",
+      "phone1": "(555) 999 888",
+      "phone2": "",
+      "shipping": "Got Street 19 ",
+      "billing": "Got Street 19 ",
+      "id": 8
     }
   ]
 }

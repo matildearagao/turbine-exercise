@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { FaPen, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { FaPen, FaChevronDown, FaChevronUp, FaUser, FaEnvelope, FaPhone, FaAddressBook, FaAddressCard } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const User = ({ user, handleExpand }) => {
@@ -8,29 +8,29 @@ const User = ({ user, handleExpand }) => {
       return (
         <Fragment>
           <div>
-            <p>
+            <p><FaUser className="icon"/>
               <span className="text-muted">Name: </span> {user.name}
             </p>
-            <p>
+            <p><FaEnvelope className="icon"/>
               <span className="text-muted">Email:</span> {user.email}
             </p>
-            <p>
+            <p><FaPhone className="icon"/>
               <span className="text-muted">Phone Number: </span> {user.phone1} 
               {user.phone2 && <span> - {user.phone2}</span>}
             </p>
 
-            <p>
+            <p><FaAddressBook className="icon"/>
               <span className="text-muted">Shipping Address: </span>
               {user.shipping}
             </p>
-            <p>
-              <span className="text-muted">Billing Address:</span>
+            <p><FaAddressCard className="icon"/>
+              <span className="text-muted">Billing Address: </span>
               {user.billing}
             </p>
           </div>
           <div className="text-right">
             <Link to={`edituser-${user.id}`}>
-              <button className="btn-round btn-green mr-2">
+              <button className="btn-edit">
                 <FaPen />
               </button>
             </Link>

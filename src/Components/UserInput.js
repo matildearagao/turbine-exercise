@@ -67,7 +67,7 @@ export default class UserInput extends Component {
               <div className="form-group">
                 <label htmlFor="email"> Person Email:</label>
                 <input
-                  type="text"
+                  type="email"
                   className="form-control"
                   name="email"
                   id="email"

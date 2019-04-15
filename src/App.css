@@ -1,4 +1,9 @@
 
+:root{
+  --main-blue-color: #1c97df;
+  --main-green-color: #01f58a;
+  --main-red-color: #fe1e52;
+}
 .body{
   background-color: #e1ebec;
 }
@@ -19,23 +24,43 @@
   box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.75);
 }
 .btn-red {
-  background-color: #fe1e52 !important;
-  color: white !important;
+  background-color: var(--main-red-color);
 }
 .btn-green {
-  background-color: #01f58a !important;
-  color: white !important;
+  background-color: var(--main-green-color) ;
 }
 .btn-blue {
-  background-color: #1c97df !important;
-  color: white !important;
+  background-color: var(--main-blue-color);
+}
+.btn-edit{
+  background-color: transparent;
+  border: none;
+  color: var(--main-blue-color);
+  cursor: pointer;
+  width: 20px;
 }
 .btn-fixed {
   position: fixed;
   bottom: 50px;
   right: 50px; 
 }
+@media only screen and (max-width: 600px) {
+  .btn-fixed {
+    bottom: 10px;
+    right: 10px; 
+  }
+}
+
 .btn-fixed a{
   color: white;
 }
-
+.link-white{
+  color: white ;
+}
+.link-white:hover{
+  text-decoration: none;
+}
+.icon{
+  color: var(--main-blue-color);
+  margin-right: 10px;
+}
