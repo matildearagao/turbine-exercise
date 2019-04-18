@@ -91,7 +91,7 @@ export default class UserEdit extends Component {
       <div className="container u-margin-top">
         <div className="row">
           <div className="col-sm-12 col-md-6 mx-auto">
-            <h2 className="text-center my-4">Edit User </h2>
+            <h2 className="my-4">Edit User </h2>
 
             <form onSubmit={this.handleSubmit}>
               <div className="form-group">
@@ -169,12 +169,7 @@ export default class UserEdit extends Component {
                   required
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <Link to="/">
-                  <button className="btn-round btn-blue">
-                    <FaUndoAlt />
-                  </button>
-                </Link>
+              <div className="d-flex justify-content-between my-4">
                 <button
                   className="btn-round btn-red"
                   onClick={this.handleDelete}
@@ -192,6 +187,11 @@ export default class UserEdit extends Component {
             </form>
           </div>
         </div>
+        <Link to="/">
+          <button className="btn-round btn-blue btn-fixed">
+            <FaUndoAlt />
+          </button>
+        </Link>
       </div>
     );
   }

@@ -21,6 +21,11 @@
   color: white;
   border: 0;
   box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s;
+}
+.btn-round:hover{
+  box-shadow: none;
+  transform: translateY(1px)
 }
 .btn-red {
   background-color: var(--main-red-color);
@@ -37,12 +42,40 @@
   color: var(--main-blue-color);
   cursor: pointer;
   width: 20px;
+  transition: all 0.2s;
+}
+.btn-edit:hover{
+  transform: scale(1.2)
 }
 .btn-fixed {
   position: fixed;
   bottom: 50px;
   right: 50px;
+  cursor: pointer;
 }
+.btn-fixed:after {
+  content: "";
+  display: inline-block;
+  background-color: var(--main-blue-color);
+  height: 100%;
+  width: 100%;
+  border-radius: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-fixed:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn-fixed:hover:after {
+  transform: scaleX(1.4) scaleY(1.4);
+  opacity: 0;
+}
+
+
+
 @media only screen and (max-width: 600px) {
   .btn-fixed {
     bottom: 10px;
@@ -66,4 +99,8 @@
 
 .u-margin-top {
   margin-top: 80px;
+}
+
+.list-item:hover {
+  cursor: pointer;
 }
