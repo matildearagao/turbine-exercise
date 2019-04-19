@@ -63,11 +63,12 @@ const User = ({ user, handleExpand }) => {
   };
 
   return (
-    <li className="list-group-item mb-2">
+    <li className="list-group-item mb-2 list-item"
+    onClick={() => handleExpand(user.id)}>
       <div className="d-flex">
         <div
           className="w-100 d-inline-flex"
-          onClick={() => handleExpand(user.id)}
+         
         >
           <p className="ellipsis">
             <strong>{user.name}</strong> - {user.email}

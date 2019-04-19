@@ -36,7 +36,7 @@ export default class UserInput extends Component {
     e.target.reset();
   };
 
-  //handle changes in inputs 
+  //handle changes in inputs
   handleChange = e => {
     this.setState({
       [e.target.name]: e.target.value
@@ -52,7 +52,7 @@ export default class UserInput extends Component {
       <div className="container u-margin-top">
         <div className="row">
           <div className="col-sm-12 col-md-6 mx-auto">
-            <h2 className="text-center my-4">Add User </h2>
+            <h2 className="my-4">Add User </h2>
             <form onSubmit={this.handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Person Name: </label>
@@ -124,13 +124,7 @@ export default class UserInput extends Component {
                   required
                 />
               </div>
-              <div className="d-flex justify-content-between">
-                <Link to="/">
-                  <button className="btn-round btn-blue">
-                    <FaUndoAlt />
-                  </button>
-                </Link>
-
+              <div className="d-flex justify-content-end my-4">
                 <button
                   type="submit"
                   onSubmit={this.handleSubmit}
@@ -142,6 +136,11 @@ export default class UserInput extends Component {
             </form>
           </div>
         </div>
+        <Link to="/">
+          <button className="btn-round btn-blue btn-fixed">
+            <FaUndoAlt />
+          </button>
+        </Link>
       </div>
     );
   }
