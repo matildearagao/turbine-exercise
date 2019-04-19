@@ -72,12 +72,25 @@ export default class UserEdit extends Component {
     });
   };
 
-  handleChange = e => {
+ //handles fields change
+ handleChange = input => e => {
+  this.setState({
+      [input]: e.target.value
+  });
+}
+
+  //proceed next step method
+  nextStep = () => {
+    const { step } = this.state;
     this.setState({
-      user: {
-        ...this.state.user,
-        [e.target.name]: e.target.value
-      }
+      step: step + 1
+    });
+  };
+  //go back previou step method
+  prevStep = () => {
+    const { step } = this.state;
+    this.setState({
+      step: step - 1
     });
   };
 

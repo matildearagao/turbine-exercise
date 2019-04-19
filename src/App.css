@@ -23,9 +23,9 @@
   box-shadow: 5px 5px 15px -7px rgba(0, 0, 0, 0.75);
   transition: all 0.2s;
 }
-.btn-round:hover{
+.btn-round:hover {
   box-shadow: none;
-  transform: translateY(1px)
+  transform: translateY(1px);
 }
 .btn-red {
   background-color: var(--main-red-color);
@@ -44,8 +44,8 @@
   width: 20px;
   transition: all 0.2s;
 }
-.btn-edit:hover{
-  transform: scale(1.2)
+.btn-edit:hover {
+  transform: scale(1.2);
 }
 .btn-fixed {
   position: fixed;
@@ -74,8 +74,6 @@
   opacity: 0;
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .btn-fixed {
     bottom: 10px;
@@ -103,4 +101,9 @@
 
 .list-item:hover {
   cursor: pointer;
+}
+
+.confirm-container {
+  border-radius: 5px;
+  padding: 20px 20px 60px 20px;
 }
