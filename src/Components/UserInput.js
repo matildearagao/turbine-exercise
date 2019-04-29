@@ -15,7 +15,6 @@ export default class UserInput extends Component {
       billing: ""
     },
     toHome: false,
-    isEdit: this.props
   };
 
   //get user based on user id
@@ -24,6 +23,7 @@ export default class UserInput extends Component {
     axios.get(`http://localhost:3000/data/${id}`).then(res => {
       this.setState({
         user: res.data,
+        isEdit: this.props
       });
     });
   };
@@ -108,16 +108,16 @@ export default class UserInput extends Component {
       );
     }
     return (
-      <div className="d-flex justify-content-end my-4">
-        <button
-          type="submit"
-          onSubmit={this.handleSubmit}
-          className="btn-round btn-green"
-        >
-          <FaCheck />
-        </button>
-      </div>
-    );
+    <div className="d-flex justify-content-end my-4">
+      <button
+        type="submit"
+        onSubmit={this.handleSubmit}
+        className="btn-round btn-green"
+      >
+        <FaCheck />
+      </button>
+    </div>
+    )
   };
 
   renderTitle = () => {

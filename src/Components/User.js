@@ -43,7 +43,7 @@ const User = ({ user, handleExpand }) => {
             </p>
           </div>
           <div className="text-right">
-            <Link to={`edituser-${user.id}`}  >
+            <Link to={`edituser-${user.id}`}>
               <button className="btn-edit">
                 <FaPen />
               </button>
@@ -63,13 +63,12 @@ const User = ({ user, handleExpand }) => {
   };
 
   return (
-    <li className="list-group-item mb-2 list-item"
-    onClick={() => handleExpand(user.id)}>
+    <li
+      className="list-group-item mb-2 list-item"
+      onClick={() => handleExpand(user.id)}
+    >
       <div className="d-flex">
-        <div
-          className="w-100 d-inline-flex"
-         
-        >
+        <div className="w-100 d-inline-flex">
           <p className="ellipsis">
             <strong>{user.name}</strong> - {user.email}
           </p>
