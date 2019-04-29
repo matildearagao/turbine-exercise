@@ -15,7 +15,7 @@ export default class UserInput extends Component {
       billing: ""
     },
     toHome: false,
-    isEdit: false
+    isEdit: this.props
   };
 
   //get user based on user id
@@ -24,7 +24,6 @@ export default class UserInput extends Component {
     axios.get(`http://localhost:3000/data/${id}`).then(res => {
       this.setState({
         user: res.data,
-        isEdit: this.props
       });
     });
   };
