@@ -43,7 +43,7 @@ const User = ({ user, handleExpand }) => {
             </p>
           </div>
           <div className="text-right">
-            <Link to={`edituser-${user.id}`}>
+            <Link to={`edituser-${user.id}`}  >
               <button className="btn-edit">
                 <FaPen />
               </button>

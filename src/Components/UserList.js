@@ -9,9 +9,9 @@ import { FaPlus } from "react-icons/fa";
 export default class UserList extends Component {
   state = {
     users: [],
-    filtered: []
+    filtered: [],
+    isEdit: false
   };
-
 
   componentDidMount() {
     //fetch data from json server
@@ -38,7 +38,12 @@ export default class UserList extends Component {
     if (this.state.users.length > 0) {
       return this.state.filtered.map(user => {
         return (
-          <User key={user.id} user={user} handleExpand={this.handleExpand} />
+          <User
+            key={user.id}
+            user={user}
+            handleExpand={this.handleExpand}
+            handleEdit={this.handleEdit}
+          />
         );
       });
     }
@@ -54,8 +59,15 @@ export default class UserList extends Component {
         } else {
           user.expand = false;
         }
+
         return user;
       })
+    });
+  };
+
+  handleEdit = () => {
+    this.setState({
+      isEdit: true
     });
   };
 
