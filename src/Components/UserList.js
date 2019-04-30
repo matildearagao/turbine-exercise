@@ -40,7 +40,7 @@ export default class UserList extends Component {
     if (this.state.users.length > 0) {
       return this.state.filtered.map(user => {
         return (
-          <User key={user.id} user={user} handleExpand={this.handleExpand} handleEdit={this.handleEdit}/>
+          <User key={user.id} user={user} handleExpand={this.handleExpand} />
         );
       });
     }
@@ -56,7 +56,6 @@ export default class UserList extends Component {
         } else {
           user.expand = false;
         }
-      
         return user;
       })
     });
