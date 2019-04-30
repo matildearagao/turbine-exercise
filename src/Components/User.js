@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import ButtonEdit from './Globals/ButtonEdit'
 import {
   FaPen,
   FaChevronDown,
@@ -43,11 +44,7 @@ const User = ({ user, handleExpand }) => {
             </p>
           </div>
           <div className="text-right">
-            <Link to={`edituser-${user.id}`}>
-              <button className="btn-edit">
-                <FaPen />
-              </button>
-            </Link>
+            <ButtonEdit user={user}/>
           </div>
         </Fragment>
       );
