@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-
 import axios from "axios";
 
 import User from "./User";
-import { FaPlus } from "react-icons/fa";
+import ButtonAdd from "./Globals/ButtonAdd";
 
 export default class UserList extends Component {
   state = {
@@ -77,12 +75,7 @@ export default class UserList extends Component {
         <div className="col-sm-12 col-md-8 mx-auto">
           <ul className="list-group">{this.renderUsers()}</ul>
         </div>
-
-        <Link to="/adduser">
-          <button className="btn-round btn-blue btn-fixed">
-            <FaPlus />
-          </button>
-        </Link>
+        <ButtonAdd />
       </div>
     );
   }

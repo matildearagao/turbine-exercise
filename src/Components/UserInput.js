@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import { Link, Redirect } from "react-router-dom";
-import { FaUndoAlt, FaCheck, FaTrashAlt } from "react-icons/fa";
+import { Redirect } from "react-router-dom";
 
 import axios from "axios";
+import ButtonUndo from "./Globals/ButtonUndo";
+import ButtonDelete from "./Globals/ButtonDelete";
+import ButtonSubmit from "./Globals/ButtonSubmit";
 
 export default class UserInput extends Component {
   state = {
@@ -14,7 +16,7 @@ export default class UserInput extends Component {
       shipping: "",
       billing: ""
     },
-    toHome: false,
+    toHome: false
   };
 
   //get user based on user id
@@ -94,30 +96,16 @@ export default class UserInput extends Component {
     if (this.state.isEdit) {
       return (
         <div className="d-flex justify-content-between my-4">
-          <button className="btn-round btn-red" onClick={this.handleDelete}>
-            <FaTrashAlt />
-          </button>
-          <button
-            type="submit"
-            onSubmit={this.handleSubmit}
-            className="btn-round btn-green"
-          >
-            <FaCheck />
-          </button>
+          <ButtonDelete handleDelete={this.handleDelete} />
+          <ButtonSubmit handleSubmit={this.handleSubmit} />
         </div>
       );
     }
     return (
-    <div className="d-flex justify-content-end my-4">
-      <button
-        type="submit"
-        onSubmit={this.handleSubmit}
-        className="btn-round btn-green"
-      >
-        <FaCheck />
-      </button>
-    </div>
-    )
+      <div className="d-flex justify-content-end my-4">
+        <ButtonSubmit handleSubmit={this.handleSubmit} />
+      </div>
+    );
   };
 
   renderTitle = () => {
@@ -220,11 +208,7 @@ export default class UserInput extends Component {
             </form>
           </div>
         </div>
-        <Link to="/">
-          <button className="btn-round btn-blue btn-fixed">
-            <FaUndoAlt />
-          </button>
-        </Link>
+        <ButtonUndo />
       </div>
     );
   }
